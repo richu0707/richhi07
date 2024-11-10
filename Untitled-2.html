@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login - College Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styling for the form and button */
+        form {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .forgot-password {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .forgot-password a {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 14px;
+        }
+
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Student Login</h1>
+        <nav>
+            <ul>
+                <li><a href="Untitled-1.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="departments.html">Departments</a></li>
+                <li><a href="students.html">Students</a></li>
+                <li><a href="Untitled-2.html">Student Login</a></li>
+                <li><a href="Untitled-3.html">Admin Login</a></li>
+                <li><a href="forgot.html">Forgot</a></li>
+                <li><a href="dashboard.html">Forgot</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <form id="studentLoginForm" onsubmit="return validateStudentLogin()">
+                <label for="studentUsername">Username:</label>
+                <input type="text" id="studentUsername" name="studentUsername" required>
+                
+                <label for="studentPassword">Password:</label>
+                <input type="password" id="studentPassword" name="studentPassword" required>
+                
+                <button type="submit">Login</button>
+            </form>
+            
+            
+            <!-- Forgot Password Link -->
+            <div class="forgot-password">
+                <a href="Cyber/forgot.html">Forgot Password?</a>
+
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 National Institute of Engineering and Technology (NIET). All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
